@@ -1,0 +1,57 @@
+cargo:rerun-if-changed=build.rs
+cargo:rerun-if-changed=ext/vswhom.cpp
+TARGET = Some("x86_64-pc-windows-msvc")
+OPT_LEVEL = Some("0")
+HOST = Some("x86_64-pc-windows-msvc")
+CXX_x86_64-pc-windows-msvc = None
+CXX_x86_64_pc_windows_msvc = None
+HOST_CXX = None
+CXX = None
+CXXFLAGS_x86_64-pc-windows-msvc = None
+CXXFLAGS_x86_64_pc_windows_msvc = None
+HOST_CXXFLAGS = None
+CXXFLAGS = None
+CRATE_CC_NO_DEFAULTS = None
+CARGO_CFG_TARGET_FEATURE = Some("fxsr,sse,sse2")
+DEBUG = Some("false")
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.27.29110\\bin\\HostX64\\x64\\cl.exe" "-nologo" "-MD" "-Brepro" "-W4" "-FoC:\\Users\\13927\\Desktop\\shell\\target\\release\\build\\vswhom-sys-2d36ea496d31dce7\\out\\ext/vswhom.o" "-c" "ext/vswhom.cpp"
+vswhom.cpp
+ext/vswhom.cpp(214): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+ext/vswhom.cpp(217): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+ext/vswhom.cpp(239): warning C4189: “defer__239”: 局部变量已初始化但不引用
+ext/vswhom.cpp(248): warning C4189: “defer__248”: 局部变量已初始化但不引用
+ext/vswhom.cpp(354): warning C4189: “defer__354”: 局部变量已初始化但不引用
+ext/vswhom.cpp(363): warning C4189: “defer__363”: 局部变量已初始化但不引用
+ext/vswhom.cpp(360): warning C4189: “defer__360”: 局部变量已初始化但不引用
+ext/vswhom.cpp(380): warning C4189: “defer__380”: 局部变量已初始化但不引用
+ext/vswhom.cpp(377): warning C4189: “defer__377”: 局部变量已初始化但不引用
+ext/vswhom.cpp(432): warning C4456: “hr”的声明隐藏了上一个本地声明
+ext/vswhom.cpp(419): note: 参见“hr”的声明
+ext/vswhom.cpp(460): warning C4244: “参数”: 从“LONGLONG”转换到“int”，可能丢失数据
+ext/vswhom.cpp(503): warning C4456: “rc”的声明隐藏了上一个本地声明
+ext/vswhom.cpp(411): note: 参见“rc”的声明
+ext/vswhom.cpp(421): warning C4189: “defer__421”: 局部变量已初始化但不引用
+ext/vswhom.cpp(491): warning C4189: “defer__491”: 局部变量已初始化但不引用
+ext/vswhom.cpp(427): warning C4189: “defer__427”: 局部变量已初始化但不引用
+ext/vswhom.cpp(440): warning C4189: “defer__440”: 局部变量已初始化但不引用
+ext/vswhom.cpp(449): warning C4189: “defer__449”: 局部变量已初始化但不引用
+ext/vswhom.cpp(435): warning C4189: “defer__435”: 局部变量已初始化但不引用
+ext/vswhom.cpp(458): warning C4189: “defer__458”: 局部变量已初始化但不引用
+ext/vswhom.cpp(443): warning C4189: “defer__443”: 局部变量已初始化但不引用
+ext/vswhom.cpp(510): warning C4189: “defer__510”: 局部变量已初始化但不引用
+ext/vswhom.cpp(521): warning C4189: “defer__521”: 局部变量已初始化但不引用
+exit code: 0
+AR_x86_64-pc-windows-msvc = None
+AR_x86_64_pc_windows_msvc = None
+HOST_AR = None
+AR = None
+running: "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.27.29110\\bin\\HostX64\\x64\\lib.exe" "-out:C:\\Users\\13927\\Desktop\\shell\\target\\release\\build\\vswhom-sys-2d36ea496d31dce7\\out\\libvswhom.a" "-nologo" "C:\\Users\\13927\\Desktop\\shell\\target\\release\\build\\vswhom-sys-2d36ea496d31dce7\\out\\ext/vswhom.o"
+exit code: 0
+cargo:rustc-link-lib=static=vswhom
+cargo:rustc-link-search=native=C:\Users\13927\Desktop\shell\target\release\build\vswhom-sys-2d36ea496d31dce7\out
+CXXSTDLIB_x86_64-pc-windows-msvc = None
+CXXSTDLIB_x86_64_pc_windows_msvc = None
+HOST_CXXSTDLIB = None
+CXXSTDLIB = None
+cargo:rustc-link-lib=dylib=OleAut32
+cargo:rustc-link-lib=dylib=Ole32
